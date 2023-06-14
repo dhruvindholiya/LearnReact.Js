@@ -17,12 +17,12 @@ class Students extends Component {
             <div>
                 <h1>Hello, I'm class base components</h1>
                 {
-                    person.map((v, i) => {
+                    person.map((Obj, i) => {
                         return (
-                            <>
-                                <h3>{v.Name}</h3>
-                                <h5>{v.Age}</h5>
-                            </>
+                            <React.Fragment key={Obj.Name}>
+                                <h3>{Obj.Name}</h3>
+                                <h5>{Obj.Age}</h5>
+                            </React.Fragment>
                         )
                     })
                 }
