@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'reactstrap';
 
 class Clock extends Component {
     constructor(props) {
@@ -16,23 +17,24 @@ class Clock extends Component {
     }
 
     componentDidMount = () => {
-        setInterval(() => {
+        this.intervalId = setInterval(() => {
            this.newTime()
         }, 1000);
     }
 
     componentDidUpdate = () => {
-        console.log('componentsDidUpdate called');
+        console.log('componentDidUpdate called');
     }
 
     componentWillUnmount = () => {
-        
+        clearInterval(this.intervalId);
     }
 
     render() {
         return (
             <div>
                 <h2>{this.state.time.toLocaleTimeString()}</h2>
+                <Button color="danger">Danger!</Button>
             </div>
         );
     }
