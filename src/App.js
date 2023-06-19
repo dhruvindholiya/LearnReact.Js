@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from './containers/Card';
-// import Card from './containers/CardFun';
+// import Card from './containers/Card';
+import Card from './containers/CardFun';
 // import Clock from './containers/ClockFun';
 // import Country from './containers/country';
 // import Employee from './containers/Employee';
@@ -12,11 +12,10 @@ import Card from './containers/Card';
 // import CounterFun from './containers/counterFun';
 // import CountryFun from './containers/countryFun';
 // import Clock from './containers/clock';
-// import Key from './containers/Key';
 
 function App() {
   return (
-    <>
+    <div className='container'>
       {/* <Students /> */}
       {/* <StudentFun /> */}
       {/* <Employee /> */}
@@ -28,9 +27,8 @@ function App() {
       {/* <Clock /> */}
       {/* <Clock /> */}
       {/* <Card /> */}
-      {/* <Key /> */}
       <Card />
-    </>
+    </div>
   );
 }
 export default App;

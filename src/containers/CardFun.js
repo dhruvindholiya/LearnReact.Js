@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Card, CardBody, CardText, CardTitle } from 'reactstrap';
+import { Button, Card, CardBody, CardSubtitle, CardText, CardTitle } from 'reactstrap';
 
 function ProductCard(props) {
     const data = [
@@ -10,7 +10,7 @@ function ProductCard(props) {
             features: "<p>8 Android stickers</p>\n<p>White colored sticker sheet</p>",
             price: "2.99",
             keywords: "Android Small Removable Sticker Sheet, android stickers, sticker sheets, removable sticker sheets, small sticker sheet, android small sticker sheets, Android Sheet",
-            url: "https://loremflickr.com/320/240",
+            url: "https://loremflickr.com/320/200",
             category: "laptop",
             subcategory: "accessories"
         },
@@ -21,7 +21,7 @@ function ProductCard(props) {
             features: "<p>Android Stickers</p>\n<p>White Colored Sticker Sheet</p>",
             price: "2.99",
             keywords: "Android Large Removable Sticker Sheet, android stickers, sticker sheets, removable sticker sheets, large sticker sheet, android large sticker sheets, Android Sheet",
-            url: "https://loremflickr.com/320/240",
+            url: "https://loremflickr.com/320/201",
             category: "laptop",
             subcategory: "accessories"
         },
@@ -32,7 +32,7 @@ function ProductCard(props) {
             features: "<p>Made of wood</p>\n<p>2.5 x 2.5 inch cube</p>\n<p>6.75 inch tall</p>\n<p>Recommended for Ages 3+</p>",
             price: "9.99",
             keywords: "Google Bot, google bot, bots, natural bots, wood bot, google wood bot",
-            url: "https://loremflickr.com/320/240",
+            url: "https://loremflickr.com/320/203",
             category: "mobile",
             subcategory: "accessories"
         },
@@ -43,7 +43,7 @@ function ProductCard(props) {
             features: "<p>Pack contains two sticker sheets</p>\n<p>Each Sheet has different emojis</p>\n<p><span>Decal dimensions should fit in a maximum sheet size of 12 3/4 x 17 1/2 inch.</span></p>",
             price: "4.99",
             keywords: "Google Emoji Sticker Pack, Google sticker pack, emoji sticker pack, google emoji, stickers, pack of sticker, pack of emoji stickers",
-            url: " https://loremflickr.com/320/240",
+            url: " https://loremflickr.com/320/204",
             category: "computer",
             subcategory: "accessories"
         },
@@ -54,7 +54,7 @@ function ProductCard(props) {
             features: "<p>Pack of 9 includes:</p>\n<p>3 Waze Mood Happy decals</p>\n<p>3 Waze Mood Original decals</p>\n<p>3 Waze Mood Ninja decals</p>",
             price: "16.99",
             keywords: "Waze Pack of 9 Decal Set, decals pack, packs of 9, Waze Packs, Waze Decals, waze, Waze",
-            url: " https://loremflickr.com/320/240",
+            url: " https://loremflickr.com/320/205",
             category: "laptop",
             subcategory: "accessories"
         },
@@ -65,7 +65,7 @@ function ProductCard(props) {
             features: "<p>Heavy weight brushed twill</p>\n<p>Adjustable velcro closure</p>\n<p>One size fits all</p>",
             price: "10.99",
             keywords: "Google Twill Cap, Google Cap, Google Twill Caps, Google Twill, google cap, google caps, google twill, google twill black cap, google black caps, google caps, black caps, Google Caps",
-            url: " https://loremflickr.com/320/240",
+            url: " https://loremflickr.com/320/206",
             category: "mobile",
             subcategory: "apparel"
         },
@@ -76,7 +76,7 @@ function ProductCard(props) {
             features: "<p>100% acrylic</p>\n<p>One size fits all</p>",
             price: "9.99",
             keywords: "Google Fold-over Beanie Grey, gray beanie, grey beanie, Google Beanies, Fold over grey, Google Beanie Grey, Google headgear",
-            url: " https://loremflickr.com/320/240",
+            url: " https://loremflickr.com/320/207",
             category: "mobile",
             subcategory: "apparel"
         },
@@ -87,7 +87,7 @@ function ProductCard(props) {
             features: "<p>Thick knit texture outside</p>\n<p>Soft plush inside</p>\n<p>Faux fur pom on top</p>",
             price: "19.99",
             keywords: "Google Pom Beanie Charcoal, pom beanie, charcoal pom beanies, Google Beanies, Pom Beanies, charcoal Google pom, beanies, headgear",
-            url: " https://loremflickr.com/320/240",
+            url: " https://loremflickr.com/320/208",
             category: "laptop",
             subcategory: "apparel"
         },
@@ -98,7 +98,7 @@ function ProductCard(props) {
             features: "<p>Jersey knit</p>\n<p>37.5% cotton, 50% polyester, 12.5% rayon</p>\n<p>Made in the USA</p>",
             price: "18.99",
             keywords: "Waze Women's Short Sleeve Tee, Waze Short Sleeve Tee, Waze Women's Tees, Waze Women's tee, waze ladies tees, waze ladies tee, waze short sleeve tees, waze short sleeve tee",
-            url: " https://loremflickr.com/320/240",
+            url: " https://loremflickr.com/320/209",
             category: "computer",
             subcategory: "apparel"
         },
@@ -109,7 +109,7 @@ function ProductCard(props) {
             features: "<p>Jersey knit</p>\n<p>37.5% cotton, 50% polyester, 12.5% rayon</p>\n<p>Made in the USA</p>",
             price: "18.99",
             keywords: "Waze Men's Short Sleeve Tee, Waze Short Sleeve Tee, Waze Men's Tees, Waze Men's tee, waze mens tees, waze mens tee, waze short sleeve tees, waze short sleeve tee",
-            url: " https://loremflickr.com/320/240",
+            url: " https://loremflickr.com/320/210",
             category: "mobile",
             subcategory: "apparel"
         },
@@ -120,7 +120,7 @@ function ProductCard(props) {
             features: "<p>Size: 13.5 x 6.5 x 17.5</p>\n<p>Ergonomic padded shoulder straps</p>\n<p>Large main compartment with internal laptop compartment</p>\n<p>Easy Snap and Adjustable straps for main compartment access</p>",
             price: "79.99",
             keywords: "Mistral Rucksack, Mistral backpack, Mistral Backpack, backpack, bags, bag, Backpack, backpacks, packs, office gear, Bag, Bags, Google Backpack, google backpack, g, google",
-            url: " https://loremflickr.com/320/240",
+            url: " https://loremflickr.com/320/211",
             category: "laptop",
             subcategory: "bags"
         },
@@ -131,7 +131,7 @@ function ProductCard(props) {
             features: "<p>Size: 12 inches wide x 18.5 inches height x 5.3 inches depth</p>\n<p>TPU Liner</p>\n<p>Internal Organizer for Pens, Phones and Other Small Items</p>\n<p>Large Main Compartment</p>\n<p>Flap Closure for Quick Access or Roll-Top for Expandable Volume and Weather Protection</p>",
             price: "149.99",
             keywords: "Google Rolltop Backpack Blue, google backpack, google blue backpack, blue rolltop, Google rolltop, Blue Backpack, backpack, rolltop",
-            url: " https://loremflickr.com/320/240",
+            url: " https://loremflickr.com/320/212",
             category: "computer",
             subcategory: "bags"
         },
@@ -142,7 +142,7 @@ function ProductCard(props) {
             features: "<p>17 oz. double wall thermal bottle</p>\n<p>Stainless steel</p>\n<p>Threaded stainless steel insulated lid</p>\n<p>Copper vacuum insulation</p>",
             price: "23.99",
             keywords: "Android Black Force 17 oz Bottle, android bottles, android black bottle, android 17 oz bottle, android black force bottle, android 17 oz Android Black Force Bottle, Android Trace Bottle Black",
-            url: " https://loremflickr.com/320/240",
+            url: " https://loremflickr.com/320/213",
             category: "mobile",
             subcategory: "drinkware"
         },
@@ -153,7 +153,7 @@ function ProductCard(props) {
             features: "<p>12 oz. stoneware</p>\n<p>Matte finish</p>",
             price: "9.99",
             keywords: "Android Black C-Handle Mug, android mugs, black android mug, c handle mug, android c handle,Android Trace Mug Black,",
-            url: " https://loremflickr.com/320/240",
+            url: " https://loremflickr.com/320/214",
             category: "laptop",
             subcategory: "drinkware"
         }
@@ -161,41 +161,49 @@ function ProductCard(props) {
     const [productData, changeData] = useState(data)
 
     const handleProduct = (productType) => {
-        const buttons = ['mobile', 'laptop', 'computer'];
+        const buttons = ['all', 'mobile', 'laptop', 'computer'];
         buttons.forEach((button) => {
-            document.getElementById(button).style.backgroundColor = productType === button ? 'green': '#212529';
+            document.getElementById(button).style.backgroundColor = productType === button ? 'green' : '#212529';
         });
         let filteredProduct = data.filter((product) => product.category === productType);
-        changeData(filteredProduct);
+
+        if (filteredProduct.length === 0) {
+            changeData(data);
+        } else {
+            changeData(filteredProduct);
+        }
     }
     return (
         <section className='py-5'>
-            <div className='container'>
-                <div className='row g-4'>
-                    <div className='row g-4 justify-content-center'>
-                        <div className='col-auto'>
-                            <Button id='mobile' onClick={() => handleProduct('mobile')} color="dark">Mobile</Button>
-                        </div>
-                        <div className='col-auto'>
-                            <Button id='laptop' onClick={() => handleProduct('laptop')} color="dark">Laptop</Button>
-                        </div>
-                        <div className='col-auto'>
-                            <Button id='computer' onClick={() => handleProduct('computer')} color="dark">Computer</Button>
-                        </div>
-                    </div>
-                    {productData.map((obj) => (
-                        <div className='col-3'>
-                            <Card style={{ height: '100%' }}>
-                                <img src={obj.url} alt='' />
-                                <CardBody>
-                                    <CardTitle tag="h5">{obj.name}</CardTitle>
-                                    <CardText>{obj.description}</CardText>
-                                    <CardText><b>Price: {obj.price}</b></CardText>
-                                </CardBody>
-                            </Card>
-                        </div>
-                    ))}
+            <h1 className='text-center mb-4'>Our Products</h1>
+            <div className='row justify-content-center g-sm-4 g-2 mb-4'>
+                <div className='col-auto'>
+                    <Button id='all' onClick={() => handleProduct('all')} color="dark">All</Button>
                 </div>
+                <div className='col-auto'>
+                    <Button id='mobile' onClick={() => handleProduct('mobile')} color="dark">Mobile</Button>
+                </div>
+                <div className='col-auto'>
+                    <Button id='laptop' onClick={() => handleProduct('laptop')} color="dark">Laptop</Button>
+                </div>
+                <div className='col-auto'>
+                    <Button id='computer' onClick={() => handleProduct('computer')} color="dark">Computer</Button>
+                </div>
+            </div>
+            <div className='row g-4'>
+                {productData.map((obj) => (
+                    <div className='col-xl-3 col-lg-4 col-sm-6 col-12'>
+                        <Card style={{ height: '100%' }}>
+                            <img style={{ height: '220px' }} alt="Card cap" src={obj.url} width="100%" />
+                            <CardBody>
+                                <CardTitle className='mb-3' tag="h4" style={{ minHeight: '48px' }}>{obj.name}</CardTitle>
+                                <CardSubtitle className='text-muted mb-3' tag="h6">{obj.category}</CardSubtitle>
+                                <CardText style={{ minHeight: '100px' }}>{obj.description}</CardText>
+                                <CardText><b>Price: </b>{obj.price}</CardText>
+                            </CardBody>
+                        </Card>
+                    </div>
+                ))}
             </div>
         </section>
     );

@@ -183,41 +183,40 @@ class Cards extends Component {
     render() {
         return (
             <section className='py-5'>
-                <div className='container'>
-                    <div className='row justify-content-center g-sm-4 g-2 mb-4'>
-                        <div className='col-auto'>
-                            <Button onClick={() => this.handleProduct('all')} className={this.state.active === null || this.state.active === 'all' ? 'btn-dark' : 'btn-secondary'}>All</Button>
-                        </div>
-                        <div className='col-auto'>
-                            <Button onClick={() => this.handleProduct('mobile')} className={this.state.active === 'mobile' ? 'btn-dark' : 'btn-secondary'}>Mobile</Button>
-                        </div>
-                        <div className='col-auto'>
-                            <Button onClick={() => this.handleProduct('laptop')} className={this.state.active === 'laptop' ? 'btn-dark' : 'btn-secondary'}>Laptop</Button>
-                        </div>
-                        <div className='col-auto'>
-                            <Button onClick={() => this.handleProduct('computer')} className={this.state.active === 'computer' ? 'btn-dark' : 'btn-secondary'}>Computer</Button>
-                        </div>
+                <h1 className='text-center mb-4'>Our Products</h1>
+                <div className='row justify-content-center g-sm-4 g-2 mb-4'>
+                    <div className='col-auto'>
+                        <Button onClick={() => this.handleProduct('all')} className={this.state.active === null || this.state.active === 'all' ? 'btn-dark' : 'btn-secondary'}>All</Button>
                     </div>
+                    <div className='col-auto'>
+                        <Button onClick={() => this.handleProduct('mobile')} className={this.state.active === 'mobile' ? 'btn-dark' : 'btn-secondary'}>Mobile</Button>
+                    </div>
+                    <div className='col-auto'>
+                        <Button onClick={() => this.handleProduct('laptop')} className={this.state.active === 'laptop' ? 'btn-dark' : 'btn-secondary'}>Laptop</Button>
+                    </div>
+                    <div className='col-auto'>
+                        <Button onClick={() => this.handleProduct('computer')} className={this.state.active === 'computer' ? 'btn-dark' : 'btn-secondary'}>Computer</Button>
+                    </div>
+                </div>
 
-                    <div className='row g-4'>
-                        {
-                            this.state.SortedProducts.map((product) => {
-                                return (
-                                    <div className='col-xl-3 col-lg-4 col-sm-6 col-12 ' key={product.id}>
-                                        <Card style={{ height: '100%' }}>
-                                            <img style={{ height: '220px' }} alt="Card cap" src={product.url} width="100%" />
-                                            <CardBody>
-                                                <CardTitle tag="h5" style={{ minHeight: '48px' }}>{product.name}</CardTitle>
-                                                <CardSubtitle tag="h6" className='mb-3'>{product.category}</CardSubtitle>
-                                                <CardText style={{ minHeight: '100px' }}>{product.description}</CardText>
-                                                <CardText><b>Price: </b>{product.price}</CardText>
-                                            </CardBody>
-                                        </Card>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
+                <div className='row g-4'>
+                    {
+                        this.state.SortedProducts.map((product) => {
+                            return (
+                                <div className='col-xl-3 col-lg-4 col-sm-6 col-12 ' key={product.id}>
+                                    <Card style={{ height: '100%' }}>
+                                        <img style={{ height: '220px' }} alt="Card cap" src={product.url} width="100%" />
+                                        <CardBody>
+                                            <CardTitle className='mb-3' tag="h4" style={{ minHeight: '48px' }}>{product.name}</CardTitle>
+                                            <CardSubtitle className='text-muted mb-3' tag="h6">{product.category}</CardSubtitle>
+                                            <CardText style={{ minHeight: '100px' }}>{product.description}</CardText>
+                                            <CardText><b>Price: </b>{product.price}</CardText>
+                                        </CardBody>
+                                    </Card>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </section>
         )
